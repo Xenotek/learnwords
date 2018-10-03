@@ -3,9 +3,9 @@ import 'isomorphic-fetch'
 
 class Api {
     static getWords() {
-        return fetch('')
+        return fetch('/api/get.php')
             .then(res => res.json())
-            .then(res => res['data']);
+            // .then(res => res['data']);
     }
 }
 
